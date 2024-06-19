@@ -1,4 +1,6 @@
 import Banner from "@/components/banner";
+import Blog from "@/components/blog";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Quote from "@/components/quote";
@@ -12,6 +14,8 @@ export default function Home() {
     <Hero />
     <Services />
     <Quote />
+    <Blog />
+    <Footer />
     </div>
   )
 }
