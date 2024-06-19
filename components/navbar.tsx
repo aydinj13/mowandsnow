@@ -16,9 +16,9 @@ import Link from 'next/link'
   
   const navigation = [
     { name: 'Home', href: '#', current: true },
-    { name: 'Contact Us', href: '/contact', current: false },
+    { name: 'Services', href: '/services', current: false },
     { name: 'Blog', href: '/blog', current: false },
-    { name: 'Soil & Mulch', href: '/soil-mulch', current: false },
+    { name: 'Contact', href: '/contact', current: false },
   ]
   
   function classNames(...classes: string[]) {
@@ -27,10 +27,10 @@ import Link from 'next/link'
   
   export default function Navbar() {
     return (
-      <Disclosure as="nav" className="bg-gray-100 opacity-90">
+      <Disclosure as="nav" className="bg-black opacity-90">
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-2 sm:px-9 lg:px-12">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
@@ -72,70 +72,13 @@ import Link from 'next/link'
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <button type="button">
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">Search</span>
-                    <SearchIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
-
-                  <button type="button">
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">Shop</span>
-                    <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
-  
-                  {/* Profile dropdown */}
-                  <Menu as="div" className="relative ml-3">
-                    <div>
-                      <MenuButton>
-                        <span className="absolute -inset-1.5" />
-                        <span className="sr-only">Open user menu</span>
-                        <UserIcon className="h-8 w-8 rounded-full" />
-                      </MenuButton>
-                    </div>
-                    <Transition
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <MenuItem>
-                          {({ focus }) => (
-                            <a
-                              href="#"
-                              className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                            >
-                              Your Profile
-                            </a>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ focus }) => (
-                            <a
-                              href="#"
-                              className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                            >
-                              Settings
-                            </a>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ focus }) => (
-                            <a
-                              href="#"
-                              className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                            >
-                              Sign out
-                            </a>
-                          )}
-                        </MenuItem>
-                      </MenuItems>
-                    </Transition>
-                  </Menu>
+                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-4 sm:pr-0">
+                <a
+                href="#"
+                className="rounded-md bg-gradient-to-r from-[#ffeb3b] to-[#ffc107] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              >
+                Get a Quote
+              </a>
                 </div>
               </div>
             </div>

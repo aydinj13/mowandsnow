@@ -3,7 +3,8 @@ import Blog from "@/components/blog";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
-import Quote from "@/components/quote";
+import Reviews from "@/components/reviews";
+import Quote from "@/components/reviews";
 import { Services } from "@/components/services";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     <Navbar />
     <Hero />
     <Services />
-    <Quote />
+    <Reviews />
     <Blog />
     <Footer />
     </div>

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lawn Mowing - Mow & Snow: Year Round Property Maintenance",
-  description: "Year Round Property Maintenance in North York Region",
+  title: "Mow and Snow Company",
+  description: "Affordable Year Round Property Maintenance",
 };
 
 export default function RootLayout({
