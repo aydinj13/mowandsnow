@@ -27,11 +27,11 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                   <p className="text-sm leading-6 text-gray-900">
-                  Copyright © 2024 Mow & Snow: Year Round Property Maintenance
+                  © 2024 Mow and Snow CA
                     <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                       <circle cx={1} cy={1} r={1} />
                     </svg>
-                    <strong className="font-semibold">All Rights Reserved.</strong>
+                    <strong className="font-semibold">Powered by Croduct Web Design</strong>
                   </p>
                 </div>
                 <div className="flex flex-1 justify-end">

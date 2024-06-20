@@ -10,18 +10,18 @@ import { Badge } from "./ui/badge"
 
 const services = [
   { id: "1", title: "Lawn Mowing", imageUrl: "lawnmowing.jpg", content: "Mowing, Trimming, and Blowing starting at just $40 per cut. Biweekly, Weekly or Custom Plans Available.", link: "lawnmowing", badge: true },
-  { id: "2", title: "Lawn Care", imageUrl: "lawnmowing.jpg", content: "Fertilizer, Weed Control, Re-Seeding, and Aeration", link: "lawncare", badge: true },
-  { id: "3", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-  { id: "4", title: "Yard Cleanup", imageUrl: "lawnmowing.jpg", content: "Spring Clean Up, Fall Clean Up, and General Clean Ups", link: "", badge: true },
-  { id: "5", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-  { id: "6", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-  { id: "7", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-  { id: "8", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-  { id: "9", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-  { id: "10", title: "Gardening", imageUrl: "lawnmowing.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting,and Clean Up", link: "gardening", badge: true },
-]
+  { id: "2", title: "Lawn Care", imageUrl: "lawncare.jpg", content: "Fertilizer, Weed Control, Re-Seeding, and Aeration", link: "lawncare", badge: true },
+  { id: "3", title: "Gardening", imageUrl: "gardening.jpg", content: "Maintenance, Weeding, Cultivating/Turnover, Planting, and Clean Up", link: "gardening", badge: true },
+  { id: "4", title: "Yard Cleanup", imageUrl: "yardcleanup.jpg", content: "Spring Clean Up, Fall Clean Up, and General Clean Ups", link: "yardcleanup", badge: true },
+  { id: "5", title: "Tree Trimming", imageUrl: "treetrimming.jpg", content: "Trimming and Pruning Services to keep your trees healthy and safe", link: "treetrimming", badge: false },
+  { id: "6", title: "Snow Removal", imageUrl: "snowremoval.jpg", content: "Efficient Snow Removal Services to keep your driveway and walkways clear", link: "snowremoval", badge: false },
+  { id: "7", title: "Mulching", imageUrl: "mulching.jpg", content: "Applying Mulch to your garden beds to retain moisture and reduce weeds", link: "mulching", badge: false },
+  { id: "8", title: "Pest Control", imageUrl: "pestcontrol.jpg", content: "Safe and Effective Pest Control Solutions for your Lawn and Garden", link: "pestcontrol", badge: false },
+  { id: "9", title: "Irrigation", imageUrl: "irrigation.jpg", content: "Installing and Maintaining Irrigation Systems to keep your lawn healthy", link: "irrigation", badge: false },
+  { id: "10", title: "Landscape Design", imageUrl: "landscapedesign.jpg", content: "Custom Landscape Design Services to enhance the beauty of your outdoor space", link: "landscapedesign", badge: false },
+];
  
-export function Services() {
+export default function Services() {
   return (
     <div>
     <h2 className="font-bold text-center text-3xl m-10">Services We Offer</h2>
@@ -46,7 +46,7 @@ export function Services() {
               </CardContent>
               <CardFooter className="flex justify-between">
               <Button variant="outline" onClick={() => {
-                window.open(`/${service.link}`)
+                window.open(`/services/${service.link}`)
               }}>Learn More</Button>
                 {service.badge && <Badge variant="accent1">Top Service</Badge>}
               </CardFooter>

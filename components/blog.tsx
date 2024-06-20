@@ -1,55 +1,23 @@
+import { Button } from "./ui/button"
+
 const posts = [
     {
       id: 1,
       title: 'Enhancing Your Lawns Beauty: The Importance of Organic Fertilize',
       href: '#',
       description:
-        'A lush and vibrant lawn is the pride of any homeowner, and achieving that green paradise requires...',
-      date: 'May 14, 2023',
-      datetime: '2023-05-14',
+        'Learn about the importance of Organic Fertilize and enhancing your lawns beauty.',
+      date: 'Feb 7, 2023',
+      datetime: '2023-02-27',
       category: { title: 'Lawn', href: '#' },
       author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
+        name: 'Admin',
+        role: 'Mow and Snow',
         href: '#',
         imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          'https://unsplash.com/photos/a-close-up-of-a-green-grass-texture-e2U0YWRU4R0',
       },
     },
-    {
-        id: 2,
-        title: 'Enhancing Your Lawns Beauty: The Importance of Organic Fertilize',
-        href: '#',
-        description:
-          'A lush and vibrant lawn is the pride of any homeowner, and achieving that green paradise requires...',
-        date: 'May 14, 2023',
-        datetime: '2023-05-14',
-        category: { title: 'Lawn', href: '#' },
-        author: {
-          name: 'Michael Foster',
-          role: 'Co-Founder / CTO',
-          href: '#',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      {
-        id: 3,
-        title: 'Enhancing Your Lawns Beauty: The Importance of Organic Fertilize',
-        href: '#',
-        description:
-          'A lush and vibrant lawn is the pride of any homeowner, and achieving that green paradise requires...',
-        date: 'May 14, 2023',
-        datetime: '2023-05-14',
-        category: { title: 'Lawn', href: '#' },
-        author: {
-          name: 'Michael Foster',
-          role: 'Co-Founder / CTO',
-          href: '#',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
 
   ]
   
@@ -60,7 +28,7 @@ const posts = [
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Blog</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Learn how to maintenance your estate with our expertise.
+              Read the latest the posts from our team of experts.
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -85,6 +53,7 @@ const posts = [
                     </a>
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                  <Button className="mt-5">Read More</Button>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
                   <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />

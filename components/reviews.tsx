@@ -12,25 +12,23 @@ export default function Reviews() {
         <section className="relative isolate overflow-hidden bg-[#ffc107] px-6 py-24 sm:py-32 lg:px-8 mt-10">
             <div className="absolute inset-0 -z-10 bg-[#ffc107] opacity-100" />
             <div className="mx-auto max-w-2xl lg:max-w-4xl">
+            <h2 className="font-bold text-center text-3xl mb-10">Testimonials</h2>
             <Card className="flex flex-col justify-between">
             <CardHeader className="flex-row gap-4 items-center">
               <Avatar>
-                <AvatarImage src="" />
+                <AvatarImage src="Andrew.png" />
                 <AvatarFallback>Image</AvatarFallback>
               </Avatar>
               <div>
                 <CardTitle>Andrew Hrivnak</CardTitle>
-                <CardDescription></CardDescription>
+                <CardDescription>5 stars</CardDescription>
               </div>
             </CardHeader>
             <CardContent>
-              <p></p>
+              <p>"True to their quotes and impeccable service. I plan to use them every year."</p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" onClick={() => {
-                window.open("")
-              }}>Learn More</Button>
-              <Badge variant="accent1">Top Service</Badge>
+              <Badge variant="accent1">Verified</Badge>
             </CardFooter>
           </Card>
                 
